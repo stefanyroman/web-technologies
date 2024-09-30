@@ -1,0 +1,27 @@
+/*---- css-demo----*/
+/*--- color scheme---
+Main color - #E65845
+2nd option- #4EBF96
+*/
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body{
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  /*---background-color:pink;---*/
+  }
+  main{}
+  
+  header.primary{
+    background-color: #A6866A;
+    color: #ffffff;
+    text-align: center;
+    text-shadow:1px 1px #000000;
+  }
