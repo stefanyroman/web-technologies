@@ -129,13 +129,6 @@ section {
     text-align: center;                    /* Center the text */
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-}
 .milestone-table {
     background-color: lightblue; /* Light blue background for the bubble effect */
     color: black;               /* Black text */
@@ -155,4 +148,21 @@ footer {
     font-weight: bold;          /* Bold milestone text */
     padding: 10px;              /* Padding around the text */
     text-align: center;         /* Center the content */
+}
+/* Blue Bubble Style */
+.blue-bubble {
+    background-color: #115cad; /* Blue background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+    margin: 20px 0; /* Space above and below the block */
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
 }
