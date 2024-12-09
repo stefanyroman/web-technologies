@@ -1,0 +1,86 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    color: #fff;
+}
+
+header .logo img {
+    width: 150px;        /* Set the width of the logo */
+    height: auto;        /* Maintain the aspect ratio */
+    max-width: 100%;     /* Ensure it doesn't exceed the container's width */
+    display: block;      /* Ensures the image behaves like a block element */
+    margin: 0 auto;      /* Centers the logo horizontally */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a.active {
+    background-color: #e1e1e1;
+    color: #000;
+}
+
+.hero {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align:center;
+    padding: 50px 20px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+}
+.hero p{
+    font-size:1.2em;
+}
+
+/* Content Sections */
+section {
+    padding: 40px;
+}
+
+.history-content, .intro {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 60px 30px 30px 30px;  /* Adjust the top padding to move content down */
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
