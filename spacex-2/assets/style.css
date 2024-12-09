@@ -6,14 +6,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     background-color: #f4f4f4;
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #000;
-    padding: 20px;
+    padding: 20px 10px;
     color: #fff;
 }
 
@@ -40,54 +41,92 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 }
 
 nav ul li a.active {
-    background-color: #e1e1e1;
-    color: #000;
+    background-color: transparent; /* Remove the white box */
+    color: #fff; /* Keep the text white */
+    text-decoration: underline; /* Optionally, add an underline instead of the box */
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #d400ff;  /* Change text color on hover (Yellow) */
+    background-color: rgba(255, 255, 255, 0.2); /* Slight background color change on hover */
+    border-radius: 5px; /* Optional: Add rounded corners on hover */
 }
 
 /* Hero Section */
 .hero {
     background-image: url('img/dragonback.jpeg'); /* Replace with your image path */
-    background-size: cover;                           /* Makes the image cover the entire hero section */
-    background-position: center center;               /* Centers the image */
-    background-repeat: no-repeat;                     /* Prevents the image from repeating */
-    color: #fff;                                      /* White text color for contrast */
-    text-align: center;                               /* Centers the text */
-    padding: 100px 20px;                              /* Adds padding to the top and bottom */
-    position: relative;                               /* Allows the addition of overlay effects */
-    height: 100vh;                                    /* Makes the hero section fill the full viewport height */
+    background-size: cover;                         /* Makes the image cover the entire hero section */
+    background-position: center center;             /* Centers the image */
+    background-repeat: no-repeat;                   /* Prevents the image from repeating */
+    color: #fff;                                    /* White text color for contrast */
+    text-align: center;                             /* Centers the text */
+    padding: 80px 20px;                             /* Adds padding to the top and bottom */
+    position: relative;                             /* Allows the addition of overlay effects */
+    height: 100vh;                                  /* Makes the hero section fill the full viewport height */
 }
 
 .hero h1 {
-    font-size: 3em;                                   /* Makes the header larger */
-    margin-bottom: 20px;                              /* Adds space below the header */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);     /* Adds shadow to text for better readability */
+    font-size: 3em;                                  /* Makes the header larger */
+    margin-bottom: 20px;                             /* Adds space below the header */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);    /* Adds shadow to text for better readability */
 }
 
 .hero p {
-    font-size: 1.5em;                                 /* Makes the paragraph slightly larger */
-    margin-top: 10px;                                 /* Adds space above the paragraph */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);     /* Adds shadow to the text for contrast */
+    font-size: 1.5em;                                /* Makes the paragraph slightly larger */
+    margin-top: 10px;                                /* Adds space above the paragraph */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);    /* Adds shadow to the text for contrast */
 }
 
+/* Black Box for Text */
+.black-box {
+    background-color: rgba(0, 0, 0, 0.7);  /* Black background with some transparency */
+    color: #fff;                           /* White text for contrast */
+    padding: 30px;                         /* Padding around the text */
+    border-radius: 8px;                    /* Rounded corners */
+    margin: 20px auto;                     /* Center it and give space around */
+    max-width: 900px;                      /* Limit the width */
+    text-align: center;                    /* Center the text */
+}
+
+/* Adjust the text size in the box for better readability */
+.black-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.black-box p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
 
 /* Content Sections */
 section {
-    padding: 40px;
+    padding: 20px;
 }
 
-.history-content, .intro {
-    background-color: #fff;
-    margin: 20px 0;
-    padding: 60px 30px 30px 30px;  /* Adjust the top padding to move content down */
-    border-radius: 8px;
+/* FAQ Section with Background Image */
+.faq-content {
+    background-image: url('img/dragonback.jpeg'); /* Background image for the FAQ section */
+    background-size: cover;                         /* Ensure image covers the entire section */
+    background-position: center center;             /* Center the background image */
+    background-repeat: no-repeat;                   /* Prevents repeating the background image */
+    padding: 50px 20px;                             /* Adds padding inside the section */
+    color: #fff;                                    /* White text color for contrast */
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.faq-content .black-box {
+    background-color: rgba(0, 0, 0, 0.7);  /* Black background with some transparency */
+    color: #fff;                           /* White text for contrast */
+    padding: 30px;                         /* Padding around the text */
+    border-radius: 8px;                    /* Rounded corners */
+    margin: 20px auto;                     /* Center it and give space around */
+    max-width: 900px;                      /* Limit the width */
+    text-align: center;                    /* Center the text */
 }
 
 /* Footer */
@@ -96,4 +135,24 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 20px 0;
+}
+.milestone-table {
+    background-color: lightblue; /* Light blue background for the bubble effect */
+    color: black;               /* Black text */
+    border-radius: 15px;        /* Rounded corners */
+    width: 100%;                /* Full width */
+    margin: 20px 0;             /* Margin between tables */
+    padding: 15px;              /* Padding inside the table */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.milestone-table th {
+    font-weight: bold;          /* Bold year header */
+    text-align: center;         /* Center the header text */
+}
+
+.milestone-table td {
+    font-weight: bold;          /* Bold milestone text */
+    padding: 10px;              /* Padding around the text */
+    text-align: center;         /* Center the content */
 }
