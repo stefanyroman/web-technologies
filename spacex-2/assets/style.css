@@ -7,8 +7,8 @@
 
 body {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #000;
+    color: #faf9f9;
 }
 
 header {
@@ -56,7 +56,6 @@ nav ul li a:hover {
     border-radius: 5px; 
 }
 
-/* Hero Section */
 .hero {
     background-image: url('img/dragonback.jpeg'); 
     background-size: cover; 
